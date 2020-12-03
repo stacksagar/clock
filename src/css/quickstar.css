@@ -1,0 +1,113 @@
+@font-face {
+ src: url(../font/operatorMono.ttf);
+ font-family: operator;
+}
+
+body {
+ background: #151515;
+}
+
+* {
+ font-family: operator !important;
+ color: #fff;
+ margin: 0px;
+ padding: 0px;
+ transition: all 0.5s;
+ box-sizing: border-box;
+}
+
+
+.fixedName {
+ position: fixed;
+ right: 10px;
+ bottom: 10px;
+}
+
+.fixedName a {
+ background: #111111;
+ display: inline-block;
+ padding: 7px 14px;
+ border-radius: 4px;
+ color: #2b4cb7;
+ text-decoration: none;
+ font-size: 1.2rem;
+}
+
+.fixedName a .fa-github {
+ margin-right: 1.5px;
+ margin-bottom: -1px;
+}
+
+
+/* Start Navbar */
+.header {
+ background: #242424;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: sticky;
+ top: 0px;
+ left: 0px;
+ padding: 10px;
+ padding-right:30px !important;
+}
+
+
+/* Stack Code Start */
+.path {
+ animation: draw 3.5s infinite;
+}
+
+@keyframes draw {
+ 50% {
+  stroke-dashoffset: 0;
+ }
+}
+
+/* Stack Code End */
+
+.headerEffect {
+ padding: 0px 5px !important;
+ padding-right:30px !important;
+} 
+
+.header nav a {
+ margin: 0px 10px;
+ display: inline-block;
+}
+
+.navBars {
+ display:none;
+ cursor: pointer;
+ font-size:1.3rem;
+}
+
+/* End Navbar */
+
+
+/* Responsive Design */
+
+@media (max-width:600px) {
+ .navBars {
+  display: unset !important;
+ }
+ .header nav {
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 95%;
+  right: 0px;
+  background: #242424;
+  padding: 20px;
+  transform: scaleY(0);
+  transform-origin: top;
+  border-radius:0px 0px 0px 20px;
+ }
+ .header nav a {
+  margin:10px 0px;
+ }
+ .navUnset {
+  transform: unset !important;
+ }
+}

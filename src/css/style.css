@@ -1,0 +1,52 @@
+.clockMain {
+ width: 100%;
+ height: calc(100vh - 80px);
+ background: #00000045;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.clockMain .clockContainer {
+ width: 400px;
+}
+
+#clock {
+ background: #874f4f2a;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ font-size: 2rem; 
+ width: 100%;
+}
+#clock img{
+ width:50px;
+}
+
+#dates {
+ text-align: right;
+ padding:15px 0px; 
+ padding-right:15px;
+ background: #874f4f2a;
+}
+
+.clockTitle {
+ background: #874f4f2a;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ font-size: 1rem;
+ padding: 20px 0px;
+ width: 100%;
+}
+
+.clockTitle h1 {
+ color: #777777 !important;
+}
+
+#progressBar {
+ background: #777777;
+ width: 70%;
+ height: 10px;
+}
